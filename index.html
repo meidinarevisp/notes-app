@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://res.cloudinary.com/dwxoqt0ra/image/upload/v1711979180/Pngtree_sticky_paper_sticky_sticky_note_4664401_nm1spr.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link href="https://fonts.cdnfonts.com/css/next-bro" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <app-bar
+        app-title="My Notes App"
+        add-note-btn-icon="fas fa-plus-circle"
+      ></app-bar>
+      <note-search
+        search-title="Recent Notes."
+        search-placeholder="Search notes..."
+      ></note-search>
+      <archive-menu></archive-menu>
+      <note-list></note-list>
+      <loading-indicator></loading-indicator>
+    </div>
+    <footer>
+      <footer-bar
+        footer-title="&copy; 2024 My Notes App. All rights reserved."
+      ></footer-bar>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>
